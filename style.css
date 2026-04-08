@@ -1,0 +1,94 @@
+* {
+	cursor: default;
+	font-family: monospace;
+	transition: 1s;
+}
+
+body {
+	background-color: black;
+	color: white;
+	zoom: 85%;
+}
+
+#form,
+#output {
+	box-shadow: 0 0 8pc #cc00ffea;
+	border-radius: 5pc;
+	margin-top: 60pc;
+	max-width: 45pc;
+}
+
+#form {
+	padding: 1pc;
+}
+
+#output {
+	display: none;
+	padding: 4pc;
+}
+
+.input-placeholder {
+	max-width: 23pc;
+	rotate: -360deg;
+	color: white;
+	font-size: 1.2pc;
+	background-color: #cc00ff88;
+	margin: .5pc;
+	padding: .7pc;
+	border-style: none;
+	border-radius: 1pc;
+}
+
+.input {
+	cursor: auto;
+	max-width: 22pc;
+	border-style: none;
+	border-radius: .5pc;
+	font-size: 1.2pc;
+	padding: .5pc;
+	margin: .2pc;
+}
+
+.btn {
+	font-size: 1.5pc;
+	padding: .5pc;
+	width: 7pc;
+	margin: .5pc;
+	background: linear-gradient(35deg, red, blue);
+	border-style: none;
+	color: white;
+}
+
+.btn:hover {
+	background-position: 20pc;
+}
+
+#textarea-placeholder {
+	max-width: 37pc;
+	width: 90%;
+}
+
+#textarea-placeholder .input {
+	resize: vertical;
+	max-width: none;
+	width: 90%;
+}
+
+#hide {
+	display: none;
+}
+
+/* Mobile Design */
+@media (max-width: 700px) {
+	.input-placeholder {
+		width: 90%;
+	}
+
+	#textarea-placeholder {
+		max-width: 23pc;
+	}
+
+	.input {
+		width: 90%;
+	}
+}
